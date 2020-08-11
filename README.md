@@ -5,5 +5,5 @@ This project aims at creating a classic etch-a-sketch with a dynamic grid layout
 ### TO-DO LIST:
 - [X] Create a static grid layout using Javascript
 - [X] Create an event handler to change the color of each block when hovered over
-- [ ] Make the button work where it prompts user to enter a number to dynamically create their grid
-- [ ] Make each pass of a grid block to get more saturated in color until it turns black
+- [X] Make the button work where it prompts user to enter a number to dynamically create their grid
+- [X] Make each pass of a grid block to get more saturated in color until it turns black
