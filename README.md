@@ -1,6 +1,6 @@
 # Project: Etch-A-Sketch
 
-This project aims at creating a classic etch-a-sketch with a dynamic grid layout and using the mouse allows the user to draw. The project was taken from The Odin Project, and requires the student to use dynamic Javascripting to create the grid.
+This project aims at creating a classic etch-a-sketch with a customizable grid layout. The project was taken from The Odin Project, and requires the student to use Javascripting to create the grid.
 
 ### TO-DO LIST:
 - [X] Create a static grid layout using Javascript
