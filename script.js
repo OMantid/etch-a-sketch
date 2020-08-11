@@ -1,28 +1,27 @@
-// Make a 16x16 column grid with JS
-// If we use CSS Grid the columns and rows would be 6.25%
 const container = document.getElementById('container');
+const btn = document.getElementById('btn');
 
-function createGrid() {
-    container.style.gridTemplateColumns = 'repeat(16, 1fr)';
-    container.style.gridTemplateRows = 'repeat(16, 1fr)';
+btn.addEventListener('click', () =>{
 
-    for (let i=0; i < 256; i++) {
+    container.innerHTML= '';
+
+    const gridNum = parseInt(window.prompt('Enter a number to create your sketch grid:'));
+    
+    container.style.gridTemplateRows = `repeat(${gridNum}, 1fr)`;
+    container.style.gridTemplateColumns = `repeat(${gridNum}, 1fr)`;
+
+    for (let i=0; i < gridNum ** 2; i++) {
         let div = document.createElement('div');
         div.classList.add('block');
         div.style.backgroundColor = '#dcdcdc';
         container.appendChild(div);
     }
-}
 
-createGrid();
+    const block = document.getElementsByClassName('block');
 
-const block = document.getElementsByClassName('block');
-
-for (const foo of block) {
-    foo.addEventListener('mouseover', () => {
-        foo.style.backgroundColor = '#696969';
-    });
-    foo.addEventListener('mouseout', () => {
-        foo.style.backgroundColor = '#696969';
-    });
-}
+    for (const foo of block) {
+        foo.addEventListener('mouseover', () => {
+            foo.style.filter += 'brightness(90%)';
+        });
+    }
+});
